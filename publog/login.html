@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="./normalize.css" /> -->
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
+    <title> Log In</title>
+  </head>
+
+  <body style = 'background-color:aquamarine;'>
+
+    <script>
+
+
+    const {name} = req.body
+        console.log(name)
+
+        if([...name]){
+          return  res.status(200).send(`
+
+            <h2>Hello and Welcome ${name}</h2>
+
+            `)
+        }
+
+
+        return res.status(401).send(`
+
+        <h2> An unidentified Persona </h2>
+        
+        `)
+
+
+    </script>
+
+   
+
+    <p> Welcome to the Login page!!</p>
+
+
+    <script src = '/signup.js'></script>
+
+  </body>
+
+</html>
