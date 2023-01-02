@@ -1,62 +1,45 @@
 <!DOCTYPE html>
-<html lang="en" >
-
-<head>
-
+<html lang="en">
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link rel="stylesheet" href="./normalize.css" /> -->
     <link rel="stylesheet" href="./style.css" />
-    <title> Simple Log In Form </title>
+    <title>Simple Log In Form</title>
+  </head>
 
-</head>
-
-<body>
-    <div id = 'main'>
-        <div class="title">Simple Log In Form</div>
-        <div class="links">
-            <a href = './index.html'>Log In</a>
-            <a href = './signup.html'>Sign Up</a>
-        </div>
+  <body>
+    <div id="main">
+      <div class="title">Simple Log In Form</div>
+      <div class="links">
+        <a href="./index.html">Log In</a>
+        <a href="./signup.html">Sign Up</a>
+      </div>
     </div>
 
-    <form id = 'form' action ='/login' method = 'POST'>
+    <form id="form" action="/login" method="POST">
+      <div class="matha">
+        <label for="name" class="label">Name:</label>
 
-        <div class = 'matha'>
-
-                <label htmlfor ='name' class = 'label'>Name:</label>
-
-                <div class="input"> 
-
-                    <input type = 'text', name = 'name' class = 'jina'/>
-
-                </div>
+        <div class="input">
+          <input type="text" , name="name" class="jina" />
         </div>
+      </div>
 
-         <div class="math">
+      <div class="math">
+        <label >Password:</label>
 
-            <label htmlfor ='password'>Password:</label>
-      
-      
-            <div class="input"> 
+        <div class="input">
+          <input type="password" , class="jina" />
+        </div>
+      </div>
 
-                <input type = 'password', name = 'name' class = 'jina'/>
-
-            </div >   
-         </div>
-
-        <div class="btn">
-            <button class = 'button'>Submit</button>
-         </div>
-
-
+      <div class="btn">
+        <button class="button">Submit</button>
+      </div>
     </form>
 
-    <script src='./signup.js'></script>
-
-</body>
-
-
-
+    <script src="./signup.js"></script>
+  </body>
 </html>

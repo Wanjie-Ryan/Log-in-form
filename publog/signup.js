@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const port = 5000
 const path = require('path')
-let cont =[]
 
 
 // app.use( error, express.static('./error page/error.html'))
@@ -19,47 +18,39 @@ app.get('/', (req, res)=>{
 
 })
 
-app.use('/login' ,express.static('./publog/signup.js'))
+// app.use('/login' ,express.static('./publog'))
 
 
-// app.post('/login', (req, res)=>{
+app.post('/login', (req, res)=>{
 
-//     res.status(200).sendFile(path.join(__dirname, './publog/login.html'))
-// })
-
-
-app.post('/login', (req,res)=>{
-
-    // console.log(req.body)
-
-    let {name} = req.body
-    let id =  name.map((names)=>{
-
-        console.log(names)
-        names = cont
-        console.log(cont)
-        // console.log(name.names)
-
-    })
-    
-
-    if([...name]){
-      return  res.status(200).send(`
-
-         <h2>Hello and Welcome ${name}</h2>
-
-        `)
-    }
-
-
-    return res.status(401).send(`
-
-     <h2> An unidentified Persona </h2>
-    
-    `)
-
-
+    res.status(200).sendFile(path.join(__dirname, './publog/login.html'))
 })
+
+
+// app.post('/login', (req,res)=>{
+
+//     // console.log(req.body)
+
+//     const {name} = req.body
+//     console.log(name)
+
+//     if([...name]){
+//       return  res.status(200).send(`
+
+//          <h2>Hello and Welcome ${name}</h2>
+
+//         `)
+//     }
+
+
+//     return res.status(401).send(`
+
+//      <h2> An unidentified Persona </h2>
+    
+//     `)
+
+
+// })
 
 
 
