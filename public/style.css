@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    background-color: black;
+    color:gold;
+}
+
+#main{
+
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px white solid;
+}
+
+#main .title{
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor:pointer;
+}
+
+#main .links{
+
+    margin-right: 10px;
+    margin-top: 10px;
+
+}
+
+#main .links a{
+    margin-left: 4px;
+    text-decoration: none;
+}
+
+#form{
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    /* border: 1px white solid; */
+    /* height:200px;
+    width:400px; */
+}
+
+.math {
+
+   display:block;
+   
+}
+
+.input .jina{
+
+    background-color: white;
+}
+
+.button{
+    display: block;
+    background-color: white;
+    height:50px;
+    width:60px;
+    border-radius: 5px;
+    cursor:pointer;
+}
